@@ -1,0 +1,11 @@
+curl --location --request POST 'http://localhost:8000/calculate' \
+--header 'Content-Type: application/xml' \
+--data-raw '<?xml version="1.0" encoding="utf-8"?>
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tns="http://example.com/calculator">
+  <soap:Body>
+    <tns:CalculateRequest>
+      <a>40</a>
+      <b>30</b>
+    </tns:CalculateRequest>
+  </soap:Body>
+</soap:Envelope>'

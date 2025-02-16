@@ -1,0 +1,6 @@
+curl --location --request POST 'http://localhost:8000/calculate' \
+--header 'Content-Type: application/json' \
+--data-raw '{
+    "a":100,
+    "b":87
+}'
